@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
             left: 'prevYear,prev,next,nextYear today',
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        }
+        },
+        navLinks: true
     });
 
     calendar.render();
