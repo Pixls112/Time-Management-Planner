@@ -2,6 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class User extends Model { }
+class User extends Model { }
 
 User.init(
     {
@@ -12,7 +13,7 @@ User.init(
             autoIncrement: true
         },
         name: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true,
             validate: {

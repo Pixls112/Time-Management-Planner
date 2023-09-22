@@ -12,7 +12,7 @@ Event.init(
             autoIncrement: true
         },
         event: {
-            type: DataTypes.VARCHAR,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         year: {
