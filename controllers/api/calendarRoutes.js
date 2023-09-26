@@ -3,24 +3,9 @@ const { Event, User } = require('../../models');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
-  console.log('inside api calendar')
   try {
-    // Get all projects and JOIN with user data
-    const eventData = await Event.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-console.log(eventData)
-    // Serialize data so the template can read it
-    const events = eventData.map((event) => event.get({ plain: true }));
-
     // Pass serialized data and session flag into template
     res.render('calendar', {
-      events,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -28,5 +13,17 @@ console.log(eventData)
   }
 });
 
+
+router.get('/events', async (req, res) => {
+
+  // Get all events from logged in user
+  const eventData = await Event.findAll({
+    attributes: ['title', 'start']
+  });
+  // Serialize data so the template can read it
+  const events = eventData.map((event) => event.get({ plain: true }));
+
+  res.status(200).json(events);
+});
 
 module.exports = router;
