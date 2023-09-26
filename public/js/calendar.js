@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             createEventButton: {
                 text: 'Create Event',
                 click: function () {
-                    alert('clicked the custom button!');
+                    document.location.replace('/api/userinput')
                 }
             }
         },
