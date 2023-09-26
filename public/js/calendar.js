@@ -17,7 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
             center: 'title',
             right: 'createEventButton dayGridMonth,timeGridWeek,timeGridDay'
         },
-        navLinks: true
+        navLinks: true,
+
+        eventSources: [
+            {
+                url: '/api/calendar/events'
+            }
+        ]
     });
 
     calendar.render();
