@@ -1,21 +1,28 @@
 // JavaScript code to handle button clicks
-document.getElementById("addTask").addEventListener("click", function() {
+document.getElementById("addTask").addEventListener("click", async function() {
     // Get the values from the input boxes
-    const taskName = document.getElementById("taskName").value;
-    const taskDescription = document.getElementById("taskDescription").value;
-
-    // Create a new task element and add it to the list of tasks
-    const taskList = document.getElementById("taskList");
-    const newTask = document.createElement("li");
-    newTask.innerHTML = `<strong>${taskName}</strong>: ${taskDescription}`;
-    taskList.appendChild(newTask);
-
+    const time = document.getElementById('startTime')
+    const date = document.getElementById('startDate')
+    const title = document.getElementById("taskDescription").value;
+    // this is what combine time is suppose to look like 2023-09-25T15:30:00.000Z
+    const start = `${date.value}T${time.value}:00.000Z`
+   
+    const reponse = await fetch("/api/userinput/save-task",{
+        method:"post",
+        headers: {
+            "Content-Type": "application/json",
+          },
+        body: JSON.stringify({
+            title,start
+        })
+    })
     // Clear the input fields
-    document.getElementById("taskName").value = "";
     document.getElementById("taskDescription").value = "";
 });
 
-document.getElementById("goBack").addEventListener("click", function() {
+document.getElementById("goBack").addEventListener("click", function(
+) {
     // Implement your go back functionality here
-    alert("Go Back clicked!");
+    document.location.replace('/api/calendar')
 });
+
