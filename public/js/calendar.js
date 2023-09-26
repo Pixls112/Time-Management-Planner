@@ -11,5 +11,24 @@ document.addEventListener('DOMContentLoaded', function () {
         navLinks: true
     });
 
+    calendar.addEventSource(
+        [
+            {
+                title: 'event1',
+                start: '2023-09-23'
+            },
+            {
+                title: 'event2',
+                start: '2023-09-01',
+                end: '2023-09-07'
+            },
+            {
+                title: 'event3',
+                start: '2023-09-20T12:30:00',
+                allDay: false // will make the time show
+            }
+        ]
+    );
+
     calendar.render();
 });
