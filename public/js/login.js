@@ -7,17 +7,16 @@ const loginFormHandler = async (event) => {
 
   if (name && password) {
     // Send a POST request to the API endpoint
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('/login', {
       method: 'POST',
       body: JSON.stringify({ name, password }),
       headers: { 'Content-Type': 'application/json' },
     });
-
     if (response.ok) {
       // If successful, redirect the browser to the profile page
-      document.location.replace('/calender');
+      document.location.replace('/api/calendar');
     } else {
-      alert(response.statusText);
+      alert("Login failed wrong username or passowrd");
     }
   }
 };
