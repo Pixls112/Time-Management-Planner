@@ -14,7 +14,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       window.location.replace('/api/calendar');
     } else {
-      alert("Please fix username or password");
+      alert("Please enter a valid username or password");
     }
   }
 };
