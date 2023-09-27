@@ -21,9 +21,7 @@ User.init(
             allowNull: false,
             unique: true,
             validate: {
-                notEmpty: {
-                    msg: 'Please enter a username'
-                }
+                notEmpty: true
             }
         },
         password: {
