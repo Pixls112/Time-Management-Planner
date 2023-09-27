@@ -11,33 +11,14 @@ Event.init(
             primaryKey: true,
             autoIncrement: true
         },
-        event: {
+        title: {
             type: DataTypes.STRING,
             allowNull: false,
+            
         },
-        year: {
-            type: DataTypes.INTEGER,
+        start: {
+            type: DataTypes.DATE,
             allowNull: false,
-            validate: {
-                notEmpty: true,
-                isInt: true
-            }
-        },
-        month: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            validate: {
-                notEmpty: true,
-                isInt: true
-            }
-        },
-        day: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            validate: {
-                notEmpty: true,
-                isInt: true
-            }
         },
         user_id: {
             type: DataTypes.INTEGER,
