@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         eventClick: function (info) {
-            alert('title: ' + info.event.id);
+            alert('id: ' + info.event.id);
         },
 
         initialView: 'dayGridMonth',
