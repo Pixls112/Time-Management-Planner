@@ -18,7 +18,10 @@ router.get('/events', async (req, res) => {
 
   // Get all events from logged in user
   const eventData = await Event.findAll({
-    attributes: ['title', 'start']
+    attributes: ['title', 'start'],
+    where: {
+      user_id: req.session.user_id
+    }
   });
   // Serialize data so the template can read it
   const events = eventData.map((event) => event.get({ plain: true }));
