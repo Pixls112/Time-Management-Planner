@@ -20,7 +20,7 @@ document.getElementById("addTask").addEventListener("click", async function() {
     })
     // Clear the input fields
     document.getElementById("taskDescription").value = "";
-    return document.location.replace('/api/calendar')
+    // return document.location.replace('/api/calendar')
 });
 
 document.getElementById("goBack").addEventListener("click", function(
