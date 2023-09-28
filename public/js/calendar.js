@@ -12,9 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
             logOutButton: {
                 text: 'Logout',
                 click: function () {
-                    
+
                 }
             }
+        },
+
+        eventClick: function (info) {
+            alert('title: ' + info.event.id);
         },
 
         initialView: 'dayGridMonth',
