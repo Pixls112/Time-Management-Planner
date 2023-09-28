@@ -26,8 +26,6 @@ router.get('/login', (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    console.log("inside login")
-    console.log(req.body)
     const userData = await User.findOne({ where: { name: req.body.name}});
     if (!userData) {
       res
@@ -46,7 +44,6 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
-      console.log(userData.id)
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       
@@ -58,6 +55,15 @@ router.post('/login', async (req, res) => {
   }
 });
 
+router.post('/logout', (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
 
 
 module.exports = router;
