@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 });
 
 
-router.post('/save-task', async (req, res) => {
+router.post('/save-task', withAuth ,async (req, res) => {
   try {
     console.log(req.body);
     const newEvent = await Event.create({
