@@ -29,4 +29,14 @@ router.get('/events', withAuth, async (req, res) => {
   res.status(200).json(events);
 });
 
+router.delete('/events', async (req, res) => {
+  const eventData = await Event.destroy({
+    attributes: ['title','start'],
+    where: {
+      user_id: req.session.user_id
+    }
+  });
+
+})
+
 module.exports = router;
