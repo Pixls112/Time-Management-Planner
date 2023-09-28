@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 click: function () {
                     document.location.replace('/api/userinput')
                 }
+            },
+            logOutButton: {
+                text: 'Logout',
+                click: function () {
+                    
+                }
             }
         },
 
@@ -15,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         headerToolbar: {
             left: 'prevYear,prev,next,nextYear today',
             center: 'title',
-            right: 'createEventButton dayGridMonth,timeGridWeek,timeGridDay'
+            right: 'logOutButton createEventButton dayGridMonth,timeGridWeek,timeGridDay'
         },
         navLinks: true,
 
