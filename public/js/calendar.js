@@ -15,15 +15,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     const response = await fetch('/logout', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                      });
-                    
-                      if (response.ok) {
+                    });
+
+                    if (response.ok) {
                         document.location.replace('/');
-                      } else {
+                    } else {
                         alert(response.statusText);
-                      }
+                    }
                 }
             }
+        },
+
+        eventClick: async function (info) {
+            document.location.replace(`/api/edit-routes/${info.event.id}`);
         },
 
         initialView: 'dayGridMonth',

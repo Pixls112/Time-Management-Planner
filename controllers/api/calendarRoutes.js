@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Event, User } = require('../../models');
-// const withAuth = require('../utils/auth');
+const withAuth = require('../../utils/auth');
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   try {
     // Pass serialized data and session flag into template
     res.render('calendar', {
@@ -14,11 +14,11 @@ router.get('/', async (req, res) => {
 });
 
 
-router.get('/events', async (req, res) => {
+router.get('/events', withAuth, async (req, res) => {
 
   // Get all events from logged in user
   const eventData = await Event.findAll({
-    attributes: ['title', 'start'],
+    attributes: ['id', 'title', 'start'],
     where: {
       user_id: req.session.user_id
     }
