@@ -64,6 +64,14 @@ router.post('/save-task', withAuth ,async (req, res) => {
     res.status(400).json(err);
   }
 });
+router.delete('/events', async (req, res) => {
+  const eventData = await Event.destroy({
+    attributes: ['title','start'],
+    where: {
+      user_id: req.session.user_id
+    }
+  });
 
+})
 
 module.exports = router;
