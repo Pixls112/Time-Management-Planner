@@ -22,17 +22,20 @@ router.get('/:id', async (req, res) => {
 
     const event = eventData.get({ plain: true });
 
-    const date = event.start.toISOString().split('T')[0];
+    const dateTime = event.start.toISOString();
+    console.log("date time: ", dateTime);
 
-    // console.log(event.start);
-    // const time = event.start.split('T');
+    const date = dateTime.split('T')[0];
 
-    // console.log(time);
+    const dateObj = new Date(dateTime);
+    dateObj.setHours(dateObj.getHours() - 7);
+    console.log("date object: ", dateObj.toString());
+    const time = dateObj.toISOString().split('T')[1].split('.')[0];
     
     res.render('edit', {
       ...event,
       date,
-      // time,
+      time,
       logged_in: req.session.logged_in
     });
   } catch (err) {
