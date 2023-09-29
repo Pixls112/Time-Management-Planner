@@ -20,10 +20,19 @@ router.get('/:id', async (req, res) => {
     const eventData = await Event.findByPk(req.params.id, {
     });
 
-    const eventPost = eventData.get({ plain: true });
+    const event = eventData.get({ plain: true });
 
+    const date = event.start.toISOString().split('T')[0];
+
+    // console.log(event.start);
+    // const time = event.start.split('T');
+
+    // console.log(time);
+    
     res.render('edit', {
-      ...eventPost,
+      ...event,
+      date,
+      // time,
       logged_in: req.session.logged_in
     });
   } catch (err) {

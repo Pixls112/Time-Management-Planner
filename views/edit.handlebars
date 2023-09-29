@@ -7,9 +7,9 @@
                     <div class="dropdown">
                         <div>
                             <label for="editTime">Edit Time:</label>
-                            <input type="time" id='editTime' name='editTime'>
+                            <input type="time" id='editTime' name='editTime' value="{{time}}">
                             <label for="editDate">Edit Date</label>
-                            <input name='editDate' id='editDate' type='date'></input>
+                            <input name='editDate' id='editDate' type='date' value="{{date}}"></input>
                         </div>
                     </div>
 
@@ -19,7 +19,7 @@
                 <div class="form-group">
                     <label for="taskDescription">Edit Task Description:</label>
                     <textarea class="form-control" id="updatetaskDescription" rows="3"
-                        placeholder="Enter task description"></textarea>
+                        placeholder="Enter task description">{{title}}</textarea>
                 </div>
                 <button type="button" class="btn btn-primary" id="editTask">Update Task</button>
                 <a href="#" class="btn btn-secondary ml-2" id="goBack">Go Back</a>
