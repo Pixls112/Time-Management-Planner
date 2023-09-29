@@ -41,6 +41,7 @@ router.get('/:id', async (req, res) => {
 });
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
+  console.log(req.params.id);
   Event.update(req.body, {
     where: {
       id: req.params.id
@@ -73,14 +74,19 @@ router.post('/save-task', withAuth ,async (req, res) => {
     res.status(400).json(err);
   }
 });
-router.delete('/events', async (req, res) => {
-  const eventData = await Event.destroy({
-    attributes: ['title','start'],
-    where: {
-      user_id: req.session.user_id
-    }
-  });
-
-})
+router.delete('/:id', async (req, res) => {
+  console.log(req.params.id);
+  try{
+    const eventData = await Event.destroy({
+      attributes: ['title','start'],
+      where: {
+        id: req.params.id
+      }
+    });
+    res.status(200).json(eventData);
+  } catch(err){
+    res.status(400).json(err);
+  }
+});
 
 module.exports = router;
