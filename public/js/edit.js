@@ -1,11 +1,11 @@
 // JavaScript code to handle button clicks
 document.getElementById("editTask").addEventListener("click", async function() {
     // Get the values from the input boxes
-    const time = document.getElementById('editTime')
+    const time = $('#editTime').val();
     const date = document.getElementById('editDate')
     const title = document.getElementById("updatetaskDescription").value;
     const id = document.getElementById("editTask").getAttribute('data-id');
-    const start = `${date.value}T${time.value}:00.000`
+    const start = `${date.value}T${time}`
     const reponse = await fetch(`/api/edit-routes/${id}`,{
         method:"put",
         headers: {
