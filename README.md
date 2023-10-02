@@ -26,13 +26,8 @@ After you done all this you can you sign in if you have pre-existing account or 
 ## Contributors
 Javier Burgara, Phillip Nguyen, Justin Feagin, Matthew Kang
 ## Contact-Us
-https://github.com/Pixls112
-https://github.com/JavierBurgara
-https://github.com/CJFeagin33
-https://github.com/matthkang
+https://github.com/Pixls112, https://github.com/JavierBurgara, https://github.com/CJFeagin33, https://github.com/matthkang
 ## Questions
-matthkang@gmail.com
-nguyen.phillip112@gmail.com
-javierburgara150@yahoo.com
+matthkang@gmail.com , nguyen.phillip112@gmail.com, javierburgara150@yahoo.com
 ## Image of Deployed Website
 ![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
