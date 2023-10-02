@@ -34,6 +34,5 @@ https://github.com/matthkang
 matthkang@gmail.com
 nguyen.phillip112@gmail.com
 javierburgara150@yahoo.com
-
 ## Image of Deployed Website
 ![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
