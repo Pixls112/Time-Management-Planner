@@ -11,8 +11,8 @@ https://protected-taiga-58244-3710fb729053.herokuapp.com/
 * [How to Use This Application](#HowtoUseThisApplication)
 * [Contributors](#contributors)
 * [Questions](#questions)
-*[Contact-Us](#contact-us)
-*[Images](#images)
+* [Contact-Us](#contact-us)
+* [Images](#images)
 ## Features
 - Seamless integration with FullCalendar
 - Customizable event handling
