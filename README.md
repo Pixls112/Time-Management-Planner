@@ -10,7 +10,6 @@ https://protected-taiga-58244-3710fb729053.herokuapp.com/
 * [Languages & Dependencies](#languagesanddependencies)
 * [How to Use This Application](#HowtoUseThisApplication)
 * [Contributors](#contributors)
-* [Questions](#questions)
 * [Contact-Us](#contact-us)
 * [Images](#images)
 ## Features
