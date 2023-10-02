@@ -6,7 +6,8 @@ router.get('/', withAuth, async (req, res) => {
   try {
     // Pass serialized data and session flag into template
     res.render('calendar', {
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      user_name: req.session.user_name
     });
   } catch (err) {
     res.status(500).json(err);

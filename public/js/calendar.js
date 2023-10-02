@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             center: 'title',
             right: 'logOutButton createEventButton dayGridMonth,timeGridWeek,timeGridDay'
         },
+        
         navLinks: true,
 
         eventSources: [
