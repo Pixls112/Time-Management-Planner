@@ -2,8 +2,6 @@
 A powerful API for integrating FullCalendar into your web applications.
 ## Description
 Using a Calendar API involves integrating a calendar service into your application or system, allowing you to manipulate and interact with calendar data programmatically. This API provides a set of endpoints and methods that enable developers to perform various operations such as creating events, retrieving event details, updating event information, and managing calendars.
-## Image of Deployed Website
-![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
 ## Deployed Application URL 
 https://protected-taiga-58244-3710fb729053.herokuapp.com/
 ## Screenshot
@@ -16,6 +14,7 @@ https://protected-taiga-58244-3710fb729053.herokuapp.com/
 * [Contributors](#contributors)
 * [Questions](#questions)
 *[Contact-Us](#contact-us)
+*[Images](#images)
 ## Features
 - Seamless integration with FullCalendar
 - Customizable event handling
@@ -34,3 +33,5 @@ https://github.com/JavierBurgara
 https://github.com/CJFeagin33
 https://github.com/matthkang
 
+## Image of Deployed Website
+![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
