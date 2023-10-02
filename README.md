@@ -11,6 +11,7 @@ https://protected-taiga-58244-3710fb729053.herokuapp.com/
 * [How to Use This Application](#HowtoUseThisApplication)
 * [Contributors](#contributors)
 * [Contact-Us](#contact-us)
+* [Questions](#questions)
 * [Images](#images)
 ## Features
 - Seamless integration with FullCalendar
@@ -29,6 +30,10 @@ https://github.com/Pixls112
 https://github.com/JavierBurgara
 https://github.com/CJFeagin33
 https://github.com/matthkang
+## Questions
+matthkang@gmail.com
+nguyen.phillip112@gmail.com
+javierburgara150@yahoo.com
 
 ## Image of Deployed Website
 ![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
