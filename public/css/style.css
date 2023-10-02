@@ -1,0 +1,18 @@
+.fc-logOutButton-button {
+    background-color: rgb(212, 64, 64) !important;
+}
+
+.fc-createEventButton-button {
+    background-color: rgb(12, 131, 223) !important;
+}
+
+@media (max-width: 1000px) {
+    .fc .fc-toolbar.fc-header-toolbar {
+        display: block;
+        text-align: center;
+    }
+
+    .fc-header-toolbar .fc-toolbar-chunk {
+        display: block;
+    }
+}
