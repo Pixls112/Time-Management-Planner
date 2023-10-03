@@ -37,5 +37,6 @@ After you done all this you can you sign in if you have pre-existing account or 
 - matthkang@gmail.com 
 - nguyen.phillip112@gmail.com
 - javierburgara150@yahoo.com
+- cjfeagin33@gmail.com
 ## Image of Deployed Website
 ![Alt text](image.png) ![Alt text](image-1.png) ![Alt text](image-2.png)![Alt text](image-3.png)![Alt text](image-4.png)![Alt text](image-5.png)![Alt text](image.png)
