@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         headerToolbar: {
             left: 'prevYear,prev,next,nextYear today',
             center: 'title',
-            right: 'logOutButton createEventButton dayGridMonth,timeGridWeek,timeGridDay'
+            right: 'createEventButton dayGridMonth,timeGridWeek,timeGridDay logOutButton'
         },
         
         navLinks: true,
